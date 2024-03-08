@@ -24,11 +24,6 @@ public class loginSteps{
 		System.out.print("Login successful");
 	}
 	
-	@When("I enter value in the username field")
-	public void i_enter_value_in_the_username_field() throws IOException, InterruptedException {
-		loginpage.enterUsername("prashanthi.nandagiri@gmail.com");
-
-	}
 	
     @Given("I Launch the order portal website")
     public void i_launch_the_order_portal_website() {

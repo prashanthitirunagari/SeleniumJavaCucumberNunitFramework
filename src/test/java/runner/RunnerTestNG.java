@@ -10,6 +10,7 @@ glue="stepdefintions",monochrome=true,
 tags="@tag",
 plugin= {"pretty","html:target/cucumber.html",
 		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+		"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
 		"rerun:target/failed_scenarios.txt"})
 public class RunnerTestNG extends AbstractTestNGCucumberTests {
 	

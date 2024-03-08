@@ -17,3 +17,8 @@ Installation In order to start using the project you need to create your own For
 **How to run the Tests?**
 
 mvn clean install -Dcucumber.filter.tags="@tag1" -Dthreads=2
+
+mvn clean -Dmaven.clean.skip=true install -Dcucumber.filter.tags="@scenario1"
+
+**To generate allure report**
+allure serve target/allure-results

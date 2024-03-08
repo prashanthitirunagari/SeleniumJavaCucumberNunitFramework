@@ -7,6 +7,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import io.cucumber.java.Scenario;
+import io.qameta.allure.Allure;
+import java.io.ByteArrayInputStream;
 import utils.ConfigurationReader;
 
 
@@ -49,6 +51,6 @@ public class DriverUtil {
         // embed it in the report.
         scenario.attach(screenshot, "image/png", "take screenshot");
        // scenario.embed(screenshot, "image/png");
-}
+    }
 	
 }

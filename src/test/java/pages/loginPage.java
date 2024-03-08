@@ -15,13 +15,7 @@ public class loginPage extends WebComponents{
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(id = "identifierId")
-    private WebElement txtUsername;
-    
-    @FindBy(xpath = "//*[@id='identifierNext']/div/button/span")
-    private WebElement btnNext;
-
-    @FindBy(xpath = "//input[@name='email']")
+    @FindBy(xpath = "//input[@name='email1']")
     private WebElement txtUserName;
     
     @FindBy(xpath = "//input[@name='password']")
@@ -36,13 +30,6 @@ public class loginPage extends WebComponents{
     @FindBy(xpath = "//a[@href='/logout']")
     private WebElement lnkSignOut;
     
-	 public void enterUsername(String username){
-		 setTextAs(txtUsername, username); 
-		 sleep(2000);
-		 clickElement(btnNext);
-		 sleep(2000);
-	 }
-	 
 	 public void enterUserName(String username){
 		 setTextAs(txtUserName, username); 
 	 }
@@ -51,9 +38,6 @@ public class loginPage extends WebComponents{
 		 setTextAs(txtPwd, pwd); 
 	 }
 	 
-	 public void clickLoginButton(String username){
-		 setTextAs(txtUsername, username); 
-	 }
 
     public void LoginToApplication(String userName, String Password){
     	clickElement(lnkSignIn);
